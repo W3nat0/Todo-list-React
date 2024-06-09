@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.todo-app {
+  width: auto;
+  min-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 70%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  width: 20%;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+ul {
+  overflow-y: scroll;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.content {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: absolute;
+  right: 10px;
+}
+li button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.check-btn {
+  background-color: green;
+  color: white;
+}
+.edit-btn {
+  background-color: #ffffff;
+  color: black;
+}
+
+.remove-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
