@@ -51,7 +51,7 @@ form button {
 }
 
 ul {
-  overflow-y: scroll;
+  overflow-y: auto;
   width: 100%;
   height: auto;
   max-height: 400px;
@@ -73,7 +73,6 @@ li {
 .content {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap;
 }
 
 .btn-container {
@@ -101,4 +100,16 @@ li button {
 .remove-btn {
   background-color: #dc3545;
   color: #fff;
+}
+
+.edit-task form {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-save {
+  background-color: green;
+}
+.edit-cancel {
+  background-color: red;
 }
